@@ -22,7 +22,10 @@ jobs:
       run: pip3 install semgrep
     - name: remove stats directory
       run: rm -rf stats
+    # TODO: fix the scan command using the opengrep binary, as the semgrep binary requires the parameter `--pro-languages` with auth to run the scan
+    - name: remove rules requiring Semgrep Pro
+      run: rm -rf apex elixir
     - name: validate rules
-      run: semgrep validate . --pro-languages
+      run: semgrep validate . 
     - name: run semgrep test
-      run: semgrep test . --pro-languages
+      run: semgrep test .

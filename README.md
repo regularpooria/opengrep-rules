@@ -28,7 +28,7 @@ You can also learn how to write rules using the [interactive, example-based Semg
 
 ## Contributing
 
-We welcome Semgrep rule contributions directly to this repository! When submitting your contribution to this repository, we’ll ask you to make Semgrep, Inc. a joint owner of your contributions. While you still own copyright rights to your rule, joint ownership allows Semgrep, Inc. to license these contributions to other [Semgrep Registry](https://semgrep.dev/r) users pursuant to the LGPL 2.1 under the [Commons Clause](https://commonsclause.com/). See full [license details](https://github.com/returntocorp/semgrep-rules/blob/develop/LICENSE).
+We welcome Semgrep rule contributions directly to this repository! When submitting your contribution to this repository, we’ll ask you to make Semgrep, Inc. a joint owner of your contributions. While you still own copyright rights to your rule, joint ownership allows Semgrep, Inc. to license these contributions to other [Semgrep Registry](https://semgrep.dev/r) users pursuant to the LGPL 2.1 under the [Commons Clause](https://commonsclause.com/). See full [license details](https://github.com/opengrep/opengrep-rules/blob/develop/LICENSE).
 
 Note: To contribute, review the **[Contributing to Semgrep rules](https://semgrep.dev/docs/contributing/contributing-to-semgrep-rules-repository/)** documentation.
 
@@ -42,7 +42,7 @@ Join [Slack](https://go.semgrep.dev/slack) for the fastest answers to your quest
 
 ### GitHub action to run tests
 
-If you fork this repository or create your own, you can add a GitHub Action to your workflow that will automatically test your rules using the latest version of Semgrep. See our [semgrep-rules-test example](https://github.com/returntocorp/semgrep-rules/blob/develop/.github/workflows/semgrep-rules-test.yml).
+If you fork this repository or create your own, you can add a GitHub Action to your workflow that will automatically test your rules using the latest version of Semgrep. See our [semgrep-rules-test example](https://github.com/opengrep/opengrep-rules/blob/develop/.github/workflows/semgrep-rules-test.yml).
 
 ### Rulesets
 

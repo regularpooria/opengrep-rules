@@ -2,8 +2,8 @@
 
 ## Supported Versions
 
-All rules on `develop` are supported.
+All rules on `main` are supported.
 
 ## Reporting a Vulnerability
 
-Please email security@semgrep.com to make a vulnerability report
+Please file a bug report in this repository

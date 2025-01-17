@@ -23,6 +23,6 @@ jobs:
     - name: remove stats directory
       run: rm -rf stats
     - name: validate rules
-      run: semgrep validate .
+      run: semgrep validate . --pro-languages
     - name: run semgrep test
-      run: semgrep test .
+      run: semgrep test . --pro-languages

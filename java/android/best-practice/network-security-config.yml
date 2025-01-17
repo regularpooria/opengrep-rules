@@ -10,7 +10,7 @@ rules:
     `<network-security-config>`)
   metadata:
     category: best-practice
-    license: Commons Clause License Condition v1.0[LGPL-2.1-only]
+    
     technology:
     - android
     references:
@@ -40,7 +40,7 @@ rules:
     pin as a backup.
   metadata:
     category: best-practice
-    license: Commons Clause License Condition v1.0[LGPL-2.1-only]
+    
     technology:
     - android
     references:
@@ -78,7 +78,7 @@ rules:
     default to trusting system CAs and disregard the pin.
   metadata:
     category: best-practice
-    license: Commons Clause License Condition v1.0[LGPL-2.1-only]
+    
     technology:
     - android
     references:
@@ -108,7 +108,7 @@ rules:
     `<network-security-config>`)
   metadata:
     category: best-practice
-    license: Commons Clause License Condition v1.0[LGPL-2.1-only]
+    
     technology:
     - android
     references:
@@ -141,7 +141,7 @@ rules:
     `<network-security-config>`)
   metadata:
     category: best-practice
-    license: Commons Clause License Condition v1.0[LGPL-2.1-only]
+    
     technology:
     - android
     references:

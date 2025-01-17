@@ -3,10 +3,10 @@ name: semgrep-rules-test
 on:
   pull_request:
     branches:
-    - release
+    - main
   push:
     branches:
-    - release
+    - main
 
 jobs:
   test-latest:
@@ -17,12 +17,11 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: 3.9.2
+    # TODO: add a pip for opengrep
     - name: install semgrep via pip
       run: pip3 install semgrep
     - name: remove stats directory
       run: rm -rf stats
-    - name: remove rules requiring Semgrep Pro
-      run: rm -rf apex elixir
     - name: validate rules
       run: semgrep validate .
     - name: run semgrep test

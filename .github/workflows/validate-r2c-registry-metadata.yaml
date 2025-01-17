@@ -1,4 +1,4 @@
-name: validate-r2c-registry-metadata
+name: validate-registry-metadata
 
 # Test this workflow using github.com/nektos/act
 # > brew install act
@@ -7,13 +7,13 @@ name: validate-r2c-registry-metadata
 
 on:
   pull_request:
-    branches: [develop, release]
+    branches: [main]
   push:
-    branches: [develop, release]
+    branches: [main]
 
 jobs:
   validate-metadata:
-    if: github.repository == 'semgrep/semgrep-rules'
+    if: github.repository == 'opengrep/opengrep-rules'
     name: Validate r2c registry metadata
     runs-on: ubuntu-20.04
     steps:

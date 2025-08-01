@@ -1,0 +1,14 @@
+rules:
+  - id: used_hash_function
+    message: >-
+      There's a hash function involved
+    pattern-regex: (?i)\b(adler32|blake2b|blake2s|blake2x|blake3|buzhash|cksum|cityhash|crc8|crc16|crc32|crc64|damm|dhash|ecoh|ecol|elfhash|elf|farmhash|fletcher|fnv|fsb|gost|grostl|gxhash|haval|has160|highwayhash|jenkins|jh|keccak|komihash|kmac|lsh|luhn|md2|md4|md5|md6|metrohash|murmurhash|nhash|omac|osdb|panama|pearson|phash|pjw|pmac|poly1305|radiogatun|rabin|ripemd|ripemd128|ripemd160|ripemd256|ripemd320|sdbm|sha0|sha1|sha224|sha256|sha384|sha512|sha3|siphash|skein|snefru|spookyhash|streebog|sum8|sum24|sum32|superfasthash|swifft|sysv|tabulation|t1ha|tiger|umac|verhoeff|vmac|whirlpool|xor8|zobrist)\b
+    languages:
+      - python
+      - c
+      - csharp
+      - java
+      - javascript
+      - php
+      - python
+    severity: INFO

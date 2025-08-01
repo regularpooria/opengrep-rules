@@ -1,0 +1,26 @@
+rules:
+  - id: sql-keywords
+    pattern-regex: \b(SELECT|INSERT|UPDATE|DELETE|REPLACE|MERGE|UPSERT|INTO|VALUES|FROM|WHERE|JOIN|LEFT\s+JOIN|RIGHT\s+JOIN|FULL\s+JOIN|INNER\s+JOIN|OUTER\s+JOIN|GROUP\s+BY|ORDER\s+BY|HAVING|LIMIT|OFFSET|UNION|EXCEPT|INTERSECT|CREATE\s+TABLE|DROP\s+TABLE|ALTER\s+TABLE|TRUNCATE|RENAME|CREATE\s+INDEX|DROP\s+INDEX|CREATE\s+VIEW|DROP\s+VIEW|GRANT|REVOKE|BEGIN|COMMIT|ROLLBACK|SAVEPOINT|TRANSACTION)\b
+    message: Possible SQL keyword detected
+    severity: INFO
+    languages:
+      - python
+      - c
+      - csharp
+      - java
+      - javascript
+      - php
+      - python
+
+  - id: sql-libs
+    pattern-regex: (?i)\b(sqlite3|psycopg2|mysql|pymysql|sqlalchemy|pg8000|pyodbc|cx_oracle|oracledb|ibm_db|mariadb|sqlite-jdbc|mysql-connector-java|postgresql|jdbc|jdbi|hibernate|spring[-_.]jdbc|typeorm|sequelize|knex|pg|better-sqlite3|tedious|mssql|ado\.net|entityframework|dapper|system\.data\.sqlclient|mysql\.data)\b
+    message: SQL library import
+    severity: INFO
+    languages:
+      - python
+      - c
+      - csharp
+      - java
+      - javascript
+      - php
+      - python
